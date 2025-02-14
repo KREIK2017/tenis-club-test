@@ -1,0 +1,67 @@
+.logo {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.logo button {
+    background-color: #FBC702;
+    color: rgb(0, 0, 0);
+    padding: 15px 63px 15px 63px;
+    top: 34px;
+    left: 1383px;
+    gap: 10px;
+    height: 34px;
+    width: 217px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Teko", serif;
+    font-optical-sizing: auto;
+    font-size: 33px;
+}
+
+h2 {
+    margin: 0px 300px 0px 20px;
+    font-family: "Oxanium", serif;
+    font-size: 38px;
+}
+
+table {
+    margin: 0px 60px 0px 40px;
+    font-family: "Teko", serif;
+    font-optical-sizing: auto;
+    font-size: 27px;
+
+}
+
+.menu {
+    background-color: black;
+    font-family: "Teko", serif;
+    font-optical-sizing: auto;
+    font-size: 27px;
+
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    color: white;
+    padding: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu ul li:first-child {
+    background-color: #FBC702;
+    color: black;
+}
