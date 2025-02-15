@@ -1,3 +1,4 @@
+/* Основні стилі */
 .logo {
     background-color: white;
     display: flex;
@@ -9,41 +10,30 @@
 .logo button {
     background-color: #FBC702;
     color: rgb(0, 0, 0);
-    padding: 15px 63px 15px 63px;
-    top: 34px;
-    left: 1383px;
-    gap: 10px;
-    height: 34px;
-    width: 217px;
+    padding: 15px 63px;
     border: none;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     font-family: "Teko", serif;
-    font-optical-sizing: auto;
     font-size: 33px;
+    font-optical-sizing: auto;
 }
 
-h2 {
-    margin: 0px 300px 0px 20px;
+.logo .title {
     font-family: "Oxanium", serif;
     font-size: 38px;
+    margin: 0 20px;
+    text-align: center; /* центрує назву */
+    flex-grow: 1; /* дозволяє назві займати доступний простір */
 }
-
 table {
-    margin: 0px 60px 0px 40px;
+    margin: 0 100px;
     font-family: "Teko", serif;
-    font-optical-sizing: auto;
     font-size: 27px;
-
 }
 
 .menu {
     background-color: black;
     font-family: "Teko", serif;
-    font-optical-sizing: auto;
     font-size: 27px;
-
 }
 
 .menu ul {
@@ -64,4 +54,78 @@ table {
 .menu ul li:first-child {
     background-color: #FBC702;
     color: black;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        justify-content: center;
+    }
+
+    .logo .title {
+        font-size: 28px;
+        margin: 0 20px;
+        text-align: center; /* текст по центру */
+    }
+
+    .logo button {
+        width: 40%;
+        padding: 10px;
+        font-size: 26px;
+    }
+
+    table {
+        margin: 10px 20px;
+        width: 23%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        padding: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo .title {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .logo button {
+        padding: 12px 20px;
+        font-size: 22px;
+    }
+
+    table {
+        margin: 10px 15px;
+        font-size: 15px;
+    }
+    .menu ul li {
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 320px) {
+    .logo .title {
+        font-size: 15px;
+        margin: 0 0px;
+    }
+
+    .logo button {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+
+    table {
+        margin: 10px 15px;
+        font-size: 14px;
+
+    }
+    .menu ul li {
+        padding: 15px;
+        font-size: 13px;
+    }
 }
