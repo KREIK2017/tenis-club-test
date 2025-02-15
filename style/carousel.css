@@ -23,19 +23,21 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Затемнення */
+    background: linear-gradient(to right, #000000d2 0%, #00000000 100%);
   }
   
   .carousel-content {
     position: absolute;
     left: 5%;
-    bottom: 20%;
-    max-width: 50%;
+    bottom: 30%;
+    max-width: 1122px;
     color: white;
     z-index: 10;
   }
   
   .carousel-content h4 {
+    margin: 0px;
+    line-height: 39.7px;
     font-size: 28px;
     color: #ffc107;
     font-family: "Blinker", serif;
@@ -43,14 +45,20 @@
   
   .carousel-content h1 {
     font-size: 48px;
-    margin: 10px 0;
+    margin:0;
     font-family: "Teko", serif;
     font-optical-sizing: auto;
     font-size: 100px;
+    text-transform: uppercase;
+    line-height: 143px;
+    letter-spacing: 0%;
 
   }
   
   .carousel-content p {
+    line-height: 40px;
+    margin: 0px;
+    display: flex;
     font-size: 28px;
     font-family: "Blinker", serif;
   }
@@ -93,4 +101,7 @@
     background: #ffcc00; /* Колір прогресу */
     transition: width 1s linear;
   }
-    
+  
+  .img2{
+    top: 28px;
+  }
