@@ -1,0 +1,90 @@
+/* Загальний контейнер для двох частин */
+.background-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff; /* жовтий фон */
+    background-image: url('/img/part2/paper_effect.png');
+
+}
+
+/* Ліва частина: білий фон з ефектом пом'ятої бумаги */
+.left-part {
+    width: 45%;
+    
+    position: relative;
+    padding: 40px;
+}
+.left-part p {
+    margin: 50px 0px;
+}
+.left-part::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: -96px; 
+    width: 15px;
+    height: 100%;
+    background-color: #FBC702; 
+    transform: skewX(-13deg); 
+    overflow: hidden; /* Додано overflow: hidden; */
+}
+
+/* Права частина: фото з обрізаною правою частиною */
+.right-part {
+    position: relative;
+    width: 55%; /* ширина правої частини */
+    background-image: url('/img/part2/image.png'); /* ваше фото */
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    overflow: hidden; /* Додано overflow: hidden; */
+}
+.buttons {
+    display: flex;
+    gap: 20px; /* Відстань між кнопками */
+}
+
+.register, .talk {
+    padding: 15px 30px; /* Внутрішній відступ для кнопок */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register {
+    background-color: #FFCC00; /* Колір фону кнопки "Register" */
+    color: #000;
+}
+
+.talk {
+    background-color: transparent; /* Прозорий фон */
+    border: 2px solid #FFCC00; /* Колір обводки */
+    color: #FFCC00; /* Колір тексту */
+}
+.back-title {
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    z-index: 0;
+
+}
+
+.back-title::after {
+    content: "";
+    z-index: -1;
+    position:absolute;
+    left: 50%;
+    bottom: 0px; /* Відступ вниз */
+    width: 99%; /* Або конкретна ширина, наприклад 120px */
+    height: 20px; /* Висота картинки */
+    background-image: url('/img/part2/for_title.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-28%); /* Вирівнюємо по центру */
+}
