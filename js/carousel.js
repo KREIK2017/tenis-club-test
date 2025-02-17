@@ -6,8 +6,8 @@ const swiper = new Swiper('.mySwiper', {
         disableOnInteraction: false,
     },
     navigation: {
-        nextEl: '.custom-next',
-        prevEl: '.custom-prev',
+        nextEl: '.carousel-custom-next',
+        prevEl: '.carousel-custom-prev',
     },
     pagination: {
         el: '.swiper-pagination',

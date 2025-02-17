@@ -70,6 +70,10 @@
   margin-top: 20px;
 }
 
+.carousel-custom-prev,
+.carousel-custom-next,
+.card-custom-prev,
+.card-custom-next,
 .custom-prev,
 .custom-next {
   background: #ffc107;
@@ -78,6 +82,8 @@
   font-size: 24px;
   cursor: pointer;
   margin: 10px;
+ 
+
 }
 
 .pagination-numbers {
@@ -102,38 +108,48 @@
   background: #ffcc00;
   transition: width 1s linear;
 }
+
 @media (max-width: 1024px) {
-.carousel-content p {
-  font-size: 22px; /* Зменшуємо шрифт тексту */
-  line-height: 30px;
+  .carousel-content p {
+    font-size: 22px;
+    /* Зменшуємо шрифт тексту */
+    line-height: 30px;
+  }
 }
-}
+
 /* Адаптація для екранів до 768px */
 @media (max-width: 768px) {
   .swiper {
-    height: 80vh; /* Зменшуємо висоту зображення */
+    height: 80vh;
+    /* Зменшуємо висоту зображення */
   }
+
   .swiper-slide img {
-    height: 80vh; /* Зменшуємо висоту зображення */
+    height: 80vh;
+    /* Зменшуємо висоту зображення */
   }
 
   .carousel-content {
     left: 5%;
     bottom: 20%;
-    max-width: 90%; /* Зменшуємо ширину контенту */
+    max-width: 90%;
+    /* Зменшуємо ширину контенту */
   }
 
   .carousel-content h1 {
-    font-size: 50px; /* Зменшуємо розмір заголовка */
+    font-size: 50px;
+    /* Зменшуємо розмір заголовка */
     line-height: 100px;
   }
 
   .carousel-content h4 {
-    font-size: 22px; /* Зменшуємо шрифт підзаголовка */
+    font-size: 22px;
+    /* Зменшуємо шрифт підзаголовка */
   }
 
   .carousel-content p {
-    font-size: 20px; /* Зменшуємо шрифт тексту */
+    font-size: 20px;
+    /* Зменшуємо шрифт тексту */
     line-height: 30px;
   }
 
@@ -142,7 +158,12 @@
     margin-top: 20px;
   }
 
-  .custom-prev, .custom-next {
+  .carousel-custom-prev,
+  .carousel-custom-next,
+  .card-custom-prev,
+  .card-custom-next,
+  .custom-prev,
+  .custom-next {
     font-size: 20px;
     padding: 8px 12px;
   }
@@ -159,29 +180,36 @@
 /* Адаптація для екранів до 480px */
 @media (max-width: 480px) {
   .swiper {
-    height: 50vh; /* Зменшуємо висоту зображення */
+    height: 50vh;
+    /* Зменшуємо висоту зображення */
   }
+
   .swiper-slide img {
-    height: 50vh; /* Зменшуємо висоту зображення */
+    height: 50vh;
+    /* Зменшуємо висоту зображення */
   }
 
   .carousel-content {
     left: 3%;
     bottom: 10%;
-    max-width: 90%; /* Зменшуємо ширину контенту */
+    max-width: 90%;
+    /* Зменшуємо ширину контенту */
   }
 
   .carousel-content h1 {
-    font-size: 36px; /* Зменшуємо шрифт заголовка */
+    font-size: 36px;
+    /* Зменшуємо шрифт заголовка */
     line-height: 80px;
   }
 
   .carousel-content h4 {
-    font-size: 18px; /* Зменшуємо шрифт підзаголовка */
+    font-size: 18px;
+    /* Зменшуємо шрифт підзаголовка */
   }
 
   .carousel-content p {
-    font-size: 14px; /* Зменшуємо шрифт тексту */
+    font-size: 14px;
+    /* Зменшуємо шрифт тексту */
     line-height: 25px;
   }
 
@@ -189,7 +217,12 @@
     gap: 10px;
   }
 
-  .custom-prev, .custom-next {
+  .carousel-custom-prev,
+  .carousel-custom-next,
+  .card-custom-prev,
+  .card-custom-next,
+  .custom-prev,
+  .custom-next {
     font-size: 10px;
     padding: 6px 10px;
   }
@@ -206,29 +239,36 @@
 /* Адаптація для екранів до 320px */
 @media (max-width: 320px) {
   .swiper {
-    height: 40vh; /* Зменшуємо висоту зображення */
+    height: 40vh;
+    /* Зменшуємо висоту зображення */
   }
+
   .swiper-slide img {
-    height: 40vh; /* Зменшуємо висоту зображення */
+    height: 40vh;
+    /* Зменшуємо висоту зображення */
   }
 
   .carousel-content {
     left: 3%;
     bottom: 5%;
-    max-width: 85%; /* Зменшуємо ширину контенту */
+    max-width: 85%;
+    /* Зменшуємо ширину контенту */
   }
 
   .carousel-content h1 {
-    font-size: 20px; /* Зменшуємо шрифт заголовка */
+    font-size: 20px;
+    /* Зменшуємо шрифт заголовка */
     line-height: 60px;
   }
 
   .carousel-content h4 {
-    font-size: 14px; /* Зменшуємо шрифт підзаголовка */
+    font-size: 14px;
+    /* Зменшуємо шрифт підзаголовка */
   }
 
   .carousel-content p {
-    font-size: 9px; /* Зменшуємо шрифт тексту */
+    font-size: 9px;
+    /* Зменшуємо шрифт тексту */
     line-height: 20px;
   }
 
@@ -236,7 +276,12 @@
     gap: 5px;
   }
 
-  .custom-prev, .custom-next {
+  .carousel-custom-prev,
+  .carousel-custom-next,
+  .card-custom-prev,
+  .card-custom-next,
+  .custom-prev,
+  .custom-next {
     font-size: 12px;
     padding: 4px 8px;
   }

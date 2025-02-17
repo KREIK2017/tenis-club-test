@@ -1,0 +1,337 @@
+.part4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+    padding: 70px;
+    justify-content: space-around;
+}
+
+.info {
+    max-width: 286px;
+    text-align: left;
+    margin-left: 60px;
+    position: relative;
+}
+
+.up p {
+    color: #FFCC00;
+    font-size: 18px;
+}
+
+.info h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.swiper-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.swiper-slide-card {
+    background: #000;
+    color: white;
+    overflow: hidden;
+    width: 300px; /* Фіксована ширина для однакових карток */
+    flex-shrink: 0;
+    max-height: fit-content;
+}
+
+.swiper-slide-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px 30px;
+}
+
+.card-content .pose {
+    color: #FFCC00;
+    font-size: 16px;
+    display: flex;
+    margin-bottom: -15px;
+}
+
+.card-content h3 {
+    font-size: 21px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block; /* Щоб елемент займав лише необхідну ширину */
+}
+
+.card-content h3::after {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Відстань від тексту */
+    width: 45px; /* Довжина підкреслення (налаштуй під свої букви) */
+    height: 2px; /* Товщина підкреслення */
+    background-color: #FFCC00; /* Колір риски */
+}
+
+
+
+.card-content .short-text,
+.card-content .full-text {
+    font-size: 14px;
+    margin-top: 40px;
+    line-height: 1.4;
+}
+
+.read-more {
+    background: none;
+    color: #FFCC00;
+    border: 2px solid #FFCC00;
+    padding: 8px 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    background: #FFCC00;
+    color: black;
+}
+
+.full-text {
+    display: none;
+}
+
+.swiper-slide-card.expanded .full-text {
+    display: block;
+}
+
+.swiper-slide-card.expanded .short-text {
+    display: none;
+}
+
+/* Стилі для пагінації */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 🔹 ДЛЯ ЕКРАНІВ ДО 1440px */
+@media (max-width: 1440px) {
+    .part4 {
+        display: flex;
+        padding: 50px;
+    }
+
+    .info {
+        width: 80%;
+        margin-right: 115px;
+    }
+
+    .swiper-card {
+        width: 100%;
+    }
+    .swiper-slide-card {
+        width: 250px; /* Фіксована ширина для однакових карток */
+        max-height: fit-content;
+    }
+    
+    .swiper-slide-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .card-content h3::after {
+        width: 40px; /* Довжина підкреслення (налаштуй під свої букви) */
+    }
+}
+
+/* 🔹 ДЛЯ ПЛАНШЕТІВ (1024px) */
+@media (max-width: 1024px) {
+    .part4 {
+        padding: 20px;
+    }
+
+    .info {
+        width: 30%;
+        margin-right: 0px;
+    }
+    .info p{
+        font-size: 14px;
+    }
+    .swiper-card {
+        width: 100%;
+    }
+
+    .swiper-slide-card {
+        width: 200px; /* Трохи зменшуємо картки */
+    }
+    .swiper-slide-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    
+    .card-content .pose {
+        color: #FFCC00;
+        font-size: 12px;
+
+    }
+    
+    .card-content h3 {
+        font-size: 14px;
+
+    }
+    
+    .card-content .short-text,
+    .card-content .full-text {
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 1.4;
+    }
+    
+    .read-more {
+        padding: 8px 12px;
+        margin-top: 15px;
+        cursor: pointer;
+        font-size: 12px;
+        transition: 0.3s;
+    }
+    .card-content h3::after {
+        width: 25px; /* Довжина підкреслення (налаштуй під свої букви) */
+    }
+}
+
+/* 🔹 ДЛЯ ПЛАНШЕТІВ (768px) */
+@media (max-width: 768px) {
+    .part4 {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        padding: 30px;
+        gap: 10px;
+    }
+
+    .info {
+        width: 100%;
+
+    }
+    .card-buttons{
+        text-align: center;
+
+    }
+    .swiper-slide-card {
+        width: 200px; /* Ще трохи зменшуємо картки */
+    }
+    .swiper-wrapper{
+        justify-content: center;
+
+    }
+    .card-content {
+        padding: 10px;
+    }
+
+    .info h2 {
+        font-size: 28px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+    
+}
+
+/* 🔹 ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (480px і менше) */
+@media (max-width: 480px) {
+    .part4 {
+        padding: 20px;
+        gap: 5px;
+    }
+
+    .info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .swiper-slide-card {
+        width: 100px; /* Мінімальна ширина карток */
+    }
+    .swiper-slide-card img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    .card-content {
+        padding: 10px;
+    }
+
+    .info h2 {
+        font-size: 24px;
+    }
+
+    .info p {
+        font-size: 13px;
+    }
+
+    .read-more {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+@media (max-width: 376px) {
+    .part4 {
+        padding: 1px;
+        gap: 5px;
+    }
+    .info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .swiper-slide-card {
+        width: 100px; /* Мінімальна ширина карток */
+    }
+    .swiper-slide-card img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+        
+    .card-content .pose {
+        color: #FFCC00;
+        font-size: 12px;
+    }
+    
+    .card-content h3 {
+        font-size: 14px;
+
+    }
+    .info h2 {
+        font-size: 24px;
+    }
+    .info p {
+        font-size: 13px;
+    }
+    .read-more {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+}
