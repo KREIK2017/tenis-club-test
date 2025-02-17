@@ -47,30 +47,34 @@
 }
 
 .register, .talk {
-    padding: 15px 30px; /* Внутрішній відступ для кнопок */
+    padding: 15px 30px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 
 .register {
-    background-color: #FFCC00; /* Колір фону кнопки "Register" */
+    background-color: #FFCC00; 
     color: #000;
+    font-family: "Teko", serif;
+    width: 30%;
+    padding: 10px;
+    font-size: 26px;
 }
 
 .talk {
-    background-color: transparent; /* Прозорий фон */
-    border: 2px solid #FFCC00; /* Колір обводки */
-    color: #FFCC00; /* Колір тексту */
+    background-color: transparent; 
+    border: 2px solid #FFCC00;
+    color: #FFCC00; 
 }
 .back-title {
     position: relative;
     font-size: 48px;
-    font-weight: bold;
+    font-weight:600;
     text-transform: uppercase;
     display: inline-block;
     z-index: 0;
+    letter-spacing: 3.5px;
 
 }
 

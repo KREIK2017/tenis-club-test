@@ -7,6 +7,15 @@
     margin-bottom: 10px;
 }
 
+h1, h4, h2{
+    font-family: "Teko", serif;
+    
+}
+
+p {
+    font-family: "Blinker", serif;
+}
+
 .logo button {
     background-color: #FBC702;
     color: rgb(0, 0, 0);
@@ -21,9 +30,12 @@
     font-family: "Oxanium", serif;
     font-size: 38px;
     margin: 0 20px;
-    text-align: center; /* центрує назву */
-    flex-grow: 1; /* дозволяє назві займати доступний простір */
+    text-align: center;
+    /* центрує назву */
+    flex-grow: 1;
+    /* дозволяє назві займати доступний простір */
 }
+
 table {
     margin: 0 100px;
     font-family: "Teko", serif;
@@ -64,7 +76,8 @@ table {
     .logo .title {
         font-size: 28px;
         margin: 0 20px;
-        text-align: center; /* текст по центру */
+        text-align: center;
+        /* текст по центру */
     }
 
     .logo button {
@@ -103,11 +116,13 @@ table {
         margin: 10px 15px;
         font-size: 15px;
     }
+
     .menu ul li {
         padding: 15px;
         font-size: 15px;
     }
 }
+
 @media (max-width: 320px) {
     .logo .title {
         font-size: 15px;
@@ -124,6 +139,7 @@ table {
         font-size: 14px;
 
     }
+
     .menu ul li {
         padding: 15px;
         font-size: 13px;

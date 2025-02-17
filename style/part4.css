@@ -20,8 +20,10 @@
 }
 
 .info h2 {
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 15px;
+    text-transform: uppercase;
+
 }
 
 .info p {
@@ -173,6 +175,7 @@
     .info {
         width: 30%;
         margin-right: 0px;
+        
     }
     .info p{
         font-size: 14px;
