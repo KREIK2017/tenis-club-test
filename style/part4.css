@@ -18,7 +18,10 @@
     color: #FFCC00;
     font-size: 18px;
 }
+.up h2{
+    color: rgb(0, 0, 0);
 
+}
 .info h2 {
     font-size: 48px;
     margin-bottom: 15px;

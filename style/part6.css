@@ -1,0 +1,139 @@
+.part6, .part7{
+    background-color: black;
+    display: flex;
+    padding: 150px;
+    flex-direction: column;
+    color: white;
+
+
+}
+.hr7 {
+    background-color: black; /* Чорний фон */
+    margin: 0; /* Прибрати відступи */
+    color: #606060;
+}
+.part6, .up2{
+margin-bottom: 20px;
+}
+.part6, .up2 p{
+    color: #FFCC00;
+
+    font-size: 24px;
+margin-bottom: 0px;
+
+}
+   .part6, .up2 h2{
+    font-size: 64.6px;
+    color: white;
+
+}
+.styled-table {
+    width: 100%;
+    margin: 0px;
+
+}
+.styled-table th, .styled-table td {
+    width: 40%;
+    
+    position: relative; /* Додаємо для коректного позиціонування псевдоелемента */
+    font-family: "Blinker", serif;
+    padding: 8px;
+}
+.styled-table th{
+    font-size: 37.23px;
+}
+.styled-table td{
+    font-size: 25px;
+    line-height: 30px;
+}
+.styled-table th::after {
+    content: ""; 
+    position:absolute ;
+    left: 8px;
+    bottom: 10px;
+    width: 39px;
+    height: 3px;
+    background-color: #FFCC00; /* Колір риски */
+}
+
+.hidden-row {
+    display: none;
+}
+#day{
+    color: #FFCC00;
+font-size: 30.96px;
+}
+#readMore {
+    margin-top: 10px;
+    background: none;
+    color: #FFCC00;
+    border: 2px solid #FFCC00;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 25.88px;
+    transition: 0.3s;
+    font-family: "Teko", serif;
+
+}
+#readMore:hover {
+    background: #FFCC00;
+    color: black;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 485px); /* 3 колонки */
+    gap: 15px;
+    padding: 20px;
+    padding: 50px; /* Вирівнювання по центру */
+}
+
+.grid-card {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-left: 5px solid #ffcc00;
+}
+
+.grid-icon {
+    background-color: #ffcc00;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.grid-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.grid-text h3 {
+    color: #ffcc00;
+    margin: 0;
+    font-size: 27.22px;
+}
+
+.grid-text p {
+    
+    margin: 5px 0 0;
+    font-size: 25px;
+}
+
+/* Для адаптації на мобільних пристроях */
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 485px); /* 2 колонки для планшетів */
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 колонка для телефонів */
+    }
+}
