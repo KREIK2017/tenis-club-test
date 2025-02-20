@@ -84,24 +84,24 @@ font-size: 30.96px;
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 485px); /* 3 колонки */
+    grid-template-columns: repeat(3, 485px);
     gap: 15px;
     padding: 20px;
-    padding: 50px; /* Вирівнювання по центру */
+    padding: 50px;
 }
 
 .grid-card {
     display: flex;
     align-items: center;
     background-color: #1a1a1a;
-    padding: 15px;
+    padding: 15px 15px 15px 0px;
     border-left: 5px solid #ffcc00;
 }
-
 .grid-icon {
+    width: 71px;
+    height: 71px;
     background-color: #ffcc00;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,9 +109,10 @@ font-size: 30.96px;
 }
 
 .grid-icon img {
-    width: 30px;
-    height: 30px;
+
+    object-fit: contain;
 }
+
 
 .grid-text h3 {
     color: #ffcc00;
