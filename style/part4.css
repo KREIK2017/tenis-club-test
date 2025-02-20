@@ -16,21 +16,21 @@
 
 .up p {
     color: #FFCC00;
-    font-size: 18px;
+    font-size: 24px;
 }
 .up h2{
+    font-size: 64.6px;
     color: rgb(0, 0, 0);
 
 }
 .info h2 {
-    font-size: 48px;
     margin-bottom: 15px;
     text-transform: uppercase;
 
 }
 
 .info p {
-    font-size: 16px;
+    font-size: 20.94px;
     line-height: 1.5;
 }
 
