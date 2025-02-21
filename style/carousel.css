@@ -1,4 +1,3 @@
-/* Стиль для загальних екранів */
 .swiper {
   width: 100%;
   height: 100vh;
@@ -82,7 +81,6 @@
   font-size: 24px;
   cursor: pointer;
   margin: 10px;
- 
 
 }
 
@@ -112,7 +110,6 @@
 @media (max-width: 1024px) {
   .carousel-content p {
     font-size: 22px;
-    /* Зменшуємо шрифт тексту */
     line-height: 30px;
   }
 }
@@ -121,35 +118,29 @@
 @media (max-width: 768px) {
   .swiper {
     height: 80vh;
-    /* Зменшуємо висоту зображення */
   }
 
   .swiper-slide img {
     height: 80vh;
-    /* Зменшуємо висоту зображення */
   }
 
   .carousel-content {
     left: 5%;
     bottom: 20%;
     max-width: 90%;
-    /* Зменшуємо ширину контенту */
   }
 
   .carousel-content h1 {
     font-size: 50px;
-    /* Зменшуємо розмір заголовка */
     line-height: 100px;
   }
 
   .carousel-content h4 {
     font-size: 22px;
-    /* Зменшуємо шрифт підзаголовка */
   }
 
   .carousel-content p {
     font-size: 20px;
-    /* Зменшуємо шрифт тексту */
     line-height: 30px;
   }
 
@@ -181,35 +172,29 @@
 @media (max-width: 480px) {
   .swiper {
     height: 50vh;
-    /* Зменшуємо висоту зображення */
   }
 
   .swiper-slide img {
     height: 50vh;
-    /* Зменшуємо висоту зображення */
   }
 
   .carousel-content {
     left: 3%;
     bottom: 10%;
     max-width: 90%;
-    /* Зменшуємо ширину контенту */
   }
 
   .carousel-content h1 {
     font-size: 36px;
-    /* Зменшуємо шрифт заголовка */
     line-height: 80px;
   }
 
   .carousel-content h4 {
     font-size: 18px;
-    /* Зменшуємо шрифт підзаголовка */
   }
 
   .carousel-content p {
     font-size: 14px;
-    /* Зменшуємо шрифт тексту */
     line-height: 25px;
   }
 
@@ -240,35 +225,29 @@
 @media (max-width: 320px) {
   .swiper {
     height: 40vh;
-    /* Зменшуємо висоту зображення */
   }
 
   .swiper-slide img {
     height: 40vh;
-    /* Зменшуємо висоту зображення */
   }
 
   .carousel-content {
     left: 3%;
     bottom: 5%;
     max-width: 85%;
-    /* Зменшуємо ширину контенту */
   }
 
   .carousel-content h1 {
     font-size: 20px;
-    /* Зменшуємо шрифт заголовка */
     line-height: 60px;
   }
 
   .carousel-content h4 {
     font-size: 14px;
-    /* Зменшуємо шрифт підзаголовка */
   }
 
   .carousel-content p {
     font-size: 9px;
-    /* Зменшуємо шрифт тексту */
     line-height: 20px;
   }
 

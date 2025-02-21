@@ -1,0 +1,133 @@
+.part10 {
+    background-color: #111;
+    text-align: center;
+    padding: 100px 20px 50px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+}
+
+.sponsor-logos img {
+    max-width: 250px;
+    filter: brightness(0) invert(1);
+}
+
+footer {
+    background-color: #111;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 90px 80px 60px 80px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: flex-start;
+
+
+}
+
+.footer-column h3 {
+    font-size: 38.29px;
+    line-height: 47.86px;
+}
+
+.footer-column h4 {
+    font-size: 32.79px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-column p,
+.footer-column a,
+.footer-column li {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+.cta-button {
+    background: none;
+    color: #FFCC00;
+    border: 2px solid #FFCC00;
+    padding: 6px 50px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.3s;
+    font-family: "Teko", serif;
+}
+
+.cta-button:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.footer-bottom {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #ccc;
+    padding: 0px 80px 20px 80px;
+}
+
+.footer-bottom p {
+    margin-top: -20px;
+
+}
+
+.contact-us {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+
+.us-icon img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sponsor-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

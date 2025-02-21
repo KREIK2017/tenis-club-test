@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     var swiper1 = new Swiper(".mySwiper2", {
-        slidesPerView: 3, // Скільки карток видно одночасно
-        spaceBetween: 20, // Відстань між картками
-        loop: true, // Зациклювання слайдів
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
         navigation: {
             nextEl: ".card-custom-next",
             prevEl: ".card-custom-prev",

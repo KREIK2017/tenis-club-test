@@ -1,14 +1,13 @@
-/* Загальний контейнер для двох частин */
+
 .background-container {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color: #ffffff; /* жовтий фон */
+    background-color: #ffffff;
     background-image: url('/img/part2/paper_effect.png');
 
 }
 
-/* Ліва частина: білий фон з ефектом пом'ятої бумаги */
 .left-part {
     width: 45%;
     
@@ -28,22 +27,21 @@
     height: 100%;
     background-color: #FBC702; 
     transform: skewX(-13deg); 
-    overflow: hidden; /* Додано overflow: hidden; */
+    overflow: hidden;
 }
 
-/* Права частина: фото з обрізаною правою частиною */
 .right-part {
     position: relative;
-    width: 55%; /* ширина правої частини */
-    background-image: url('/img/part2/image.png'); /* ваше фото */
+    width: 55%; 
+    background-image: url('/img/part2/image.png'); 
     background-size: cover;
     background-position: center;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-    overflow: hidden; /* Додано overflow: hidden; */
+    overflow: hidden;
 }
 .buttons {
     display: flex;
-    gap: 20px; /* Відстань між кнопками */
+    gap: 20px; 
 }
 
 .register, .talk {
@@ -69,7 +67,7 @@
 }
 .back-title {
     position: relative;
-    font-size: 48px;
+    font-size: 64.6px;
     font-weight:600;
     text-transform: uppercase;
     display: inline-block;
@@ -82,13 +80,13 @@
     content: "";
     z-index: -1;
     position:absolute;
-    left: 50%;
-    bottom: 0px; /* Відступ вниз */
-    width: 99%; /* Або конкретна ширина, наприклад 120px */
-    height: 20px; /* Висота картинки */
+    left: 52%;
+    bottom: 15px;
+    width: 99%; 
+    height: 20px;
     background-image: url('/img/part2/for_title.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform: translateX(-28%); /* Вирівнюємо по центру */
+    transform: translateX(-28%);
 }

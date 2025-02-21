@@ -81,17 +81,17 @@
     margin: 10px 0;
     text-transform: uppercase;
     position: relative;
-    display: inline-block; /* Щоб елемент займав лише необхідну ширину */
+    display: inline-block;
 }
 
 .card-content h3::after {
     content: ""; 
     position: absolute;
     left: 0;
-    bottom: -10px; /* Відстань від тексту */
-    width: 45px; /* Довжина підкреслення (налаштуй під свої букви) */
-    height: 2px; /* Товщина підкреслення */
-    background-color: #FFCC00; /* Колір риски */
+    bottom: -10px; 
+    width: 45px; 
+    height: 2px; 
+    background-color: #FFCC00; 
 }
 
 
@@ -139,7 +139,7 @@
     transform: translateX(-50%);
 }
 
-/* 🔹 ДЛЯ ЕКРАНІВ ДО 1440px */
+/* ДЛЯ ЕКРАНІВ ДО 1440px */
 @media (max-width: 1440px) {
     .part4 {
         display: flex;
@@ -155,7 +155,7 @@
         width: 100%;
     }
     .swiper-slide-card {
-        width: 250px; /* Фіксована ширина для однакових карток */
+        width: 250px; 
         max-height: fit-content;
     }
     
@@ -165,11 +165,11 @@
         object-fit: cover;
     }
     .card-content h3::after {
-        width: 40px; /* Довжина підкреслення (налаштуй під свої букви) */
+        width: 40px;
     }
 }
 
-/* 🔹 ДЛЯ ПЛАНШЕТІВ (1024px) */
+/* ДЛЯ ПЛАНШЕТІВ (1024px) */
 @media (max-width: 1024px) {
     .part4 {
         padding: 20px;
@@ -188,7 +188,7 @@
     }
 
     .swiper-slide-card {
-        width: 200px; /* Трохи зменшуємо картки */
+        width: 200px;
     }
     .swiper-slide-card img {
         width: 100%;
@@ -222,11 +222,11 @@
         transition: 0.3s;
     }
     .card-content h3::after {
-        width: 25px; /* Довжина підкреслення (налаштуй під свої букви) */
+        width: 25px; 
     }
 }
 
-/* 🔹 ДЛЯ ПЛАНШЕТІВ (768px) */
+/* ДЛЯ ПЛАНШЕТІВ (768px) */
 @media (max-width: 768px) {
     .part4 {
         flex-direction: column;
@@ -245,7 +245,7 @@
 
     }
     .swiper-slide-card {
-        width: 200px; /* Ще трохи зменшуємо картки */
+        width: 200px;
     }
     .swiper-wrapper{
         justify-content: center;
@@ -265,7 +265,7 @@
     
 }
 
-/* 🔹 ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (480px і менше) */
+/* ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (480px і менше) */
 @media (max-width: 480px) {
     .part4 {
         padding: 20px;
@@ -278,7 +278,7 @@
     }
 
     .swiper-slide-card {
-        width: 100px; /* Мінімальна ширина карток */
+        width: 100px; 
     }
     .swiper-slide-card img {
         width: 100%;
@@ -313,7 +313,7 @@
     }
 
     .swiper-slide-card {
-        width: 100px; /* Мінімальна ширина карток */
+        width: 100px;
     }
     .swiper-slide-card img {
         width: 100%;

@@ -4,12 +4,10 @@
     padding: 150px;
     flex-direction: column;
     color: white;
-
-
 }
 .hr7 {
-    background-color: black; /* Чорний фон */
-    margin: 0; /* Прибрати відступи */
+    background-color: black; 
+    margin: 0;
     color: #606060;
 }
 .part6, .up2{
@@ -35,7 +33,7 @@ margin-bottom: 0px;
 .styled-table th, .styled-table td {
     width: 40%;
     
-    position: relative; /* Додаємо для коректного позиціонування псевдоелемента */
+    position: relative;
     font-family: "Blinker", serif;
     padding: 8px;
 }
@@ -53,7 +51,7 @@ margin-bottom: 0px;
     bottom: 10px;
     width: 39px;
     height: 3px;
-    background-color: #FFCC00; /* Колір риски */
+    background-color: #FFCC00; 
 }
 
 .hidden-row {
@@ -126,15 +124,15 @@ font-size: 30.96px;
     font-size: 25px;
 }
 
-/* Для адаптації на мобільних пристроях */
+
 @media (max-width: 900px) {
     .grid-container {
-        grid-template-columns: repeat(2, 485px); /* 2 колонки для планшетів */
+        grid-template-columns: repeat(2, 485px);
     }
 }
 
 @media (max-width: 600px) {
     .grid-container {
-        grid-template-columns: 1fr; /* 1 колонка для телефонів */
+        grid-template-columns: 1fr;
     }
 }

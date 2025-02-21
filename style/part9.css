@@ -1,0 +1,27 @@
+.part9 {
+    background:url('../img/part9/image.png') center/cover no-repeat;
+    
+    position: relative;
+    width: 100%;
+    height: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.part9::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    pointer-events: none; 
+  }
+.part9 h2, .part10 h2{
+    color: #fff;
+    font-size: 64.6px;
+    line-height: 92.58px;
+    text-transform: uppercase;
+    z-index: 2; 
+}

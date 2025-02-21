@@ -20,7 +20,7 @@
 }
 .grid-text-content h1{
     position: relative;
-    font-size: 48px;
+    font-size: 64.6px;
     font-weight:600;
     text-transform: uppercase;
     display: inline-block;
@@ -37,7 +37,7 @@
     left: 0;
     bottom: 10px; 
     width: 100%;
-    height: 23px;
+    height: 30px;
     background-image: url('/img/part2/for_title.png');
     background-size: contain;
     background-repeat: no-repeat;

@@ -1,5 +1,5 @@
 const swiper = new Swiper('.mySwiper', {
-    loop: false, // Відключаємо loop
+    loop: false, 
     effect: "fade",
     autoplay: {
         delay: 8000,
@@ -13,7 +13,7 @@ const swiper = new Swiper('.mySwiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    speed: 400, // Додаємо плавний перехід, час у мілісекундах
+    speed: 400, 
     on: {
         init: function () {
             updateSlideNumber(this);
@@ -27,7 +27,7 @@ const swiper = new Swiper('.mySwiper', {
 });
 
 function updateSlideNumber(swiper) {
-    const currentIndex = swiper.realIndex + 1; // Поточний слайд (з урахуванням індексації)
+    const currentIndex = swiper.realIndex + 1; 
     const currentSlideElement = swiper.slides[swiper.realIndex].querySelector('.current-slide');
     currentSlideElement.textContent = String(currentIndex).padStart(2, '0');
 }
@@ -36,8 +36,6 @@ function updateProgressBar(swiper) {
     const totalSlides = swiper.slides.length; 
     const currentIndex = swiper.realIndex + 1;
     const progressWidth = (currentIndex / totalSlides) * 100;
-
-    // Знайти поточний прогрес-бар на поточному слайді
     const progressFill = swiper.slides[swiper.realIndex].querySelector('.progress-fill');
     progressFill.style.width = progressWidth + "%";
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/all_styles.css">
     <script type="module" src="./js/all_js.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -124,7 +125,6 @@
                 </div>
             </div>
 
-            <!-- Пагінація -->
             <div class="swiper-pagination"></div>
         </div>
 
@@ -148,7 +148,33 @@
         </div>
 
 
-        <div class="video">
+        <div class="part3">
+            <div class="custom-player">
+                <video class="custom-player__video" src="" poster="./img/image1.png" preload="metadata">
+                </video>
+
+                <button class="play-btn-center" aria-label="Play"></button>
+
+                <div class="controls">
+
+                    <div class="left-controls">
+                        <button class="play-pause" aria-label="Play/Pause"></button>
+                    </div>
+                    <div class="time-display">
+                        <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
+                    </div>
+
+                    <div class="video-progress-bar">
+                        <div class="video-progress"></div>
+                    </div>
+                    <div class="right-controls">
+                        <img src="./img/part3/vote.png" alt="Volume Icon" class="volume-icon">
+
+                        <input type="range" id="radius" class="volume-control" min="0" max="1" step="0.01" value="0.5"
+                            aria-label="Volume">
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -416,7 +442,6 @@
                     </div>
                 </div>
 
-                <!-- Додаткові елементи для перевірки прокрутки -->
                 <div class="list-item">
                     <div class="item-number">04.-</div>
                     <div class="item-content">
@@ -452,18 +477,62 @@
             <h2>OUR LOCATION</h2>
         </div>
 
-        <div class="part10">
+        <section class="part10">
             <h2>SPONSOR</h2>
-        </div>
+            <div class="sponsor-logos">
+                <img src="./img/part10/sponsor1.png" alt="">
+                <img src="./img/part10/sponsor2.png" alt="">
+                <img src="./img/part10/sponsor3.png" alt="">
+
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; HTML Cheat Sheet</p>
-        <address>
-            Contact <a href="mailto:me@html6.com">me</a>
-        </address>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>THE BAJOIT TENNIS CAMP</h3>
+                <p id="#text">The Bajoit Tennis Camp, held on the picturesque Southwestern University campus</p>
+                <p><strong>Address:</strong><br>1001 E University Ave, Georgetown, TX 78626</p>
+                <p><strong>Academy Email:</strong><br>bajoittennis@gmail.com</p>
+                <p><strong>Jeremy Wilson (Camp Manager):</strong><br>(210) 867-2202</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Camp Program</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Follow us</h4>
+                <div class="contact-us">
+                    <a class="us-icon" href="#"><img src="./img/footer/icon1.png" alt=""></a>
+                    <a class="us-icon" href="#"><img src="./img/footer/icon2.png" alt=""></a>
+                    <a class="us-icon" href="#"><img src="./img/footer/icon3.png" alt=""></a>
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+                <h4>GET STARTED</h4>
+                <p>Become a participant and register now</p>
+                <button class="cta-button" href="#">Talk to a camp director</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright©2023 Bajoit Tennis Academy</p>
+            <p>Designed & Developed by TuiSpace</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
 
 </body>
 
