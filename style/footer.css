@@ -27,7 +27,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    padding: 90px 80px 60px 80px;
+    padding: 70px 150px;
     justify-content: space-between;
     align-items: baseline;
 }
@@ -99,7 +99,8 @@ footer {
     font-size: 20px;
     line-height: 1.6;
     color: #ccc;
-    padding: 0px 80px 20px 80px;
+
+    padding: 0px 150px 20px 150px;
 }
 
 .footer-bottom p {
@@ -120,14 +121,21 @@ footer {
     object-fit: contain;
 }
 
+@media (max-width: 1024px) {
+    .footer-content{
+        padding: 0px 80px 20px 80px;
+
+    }
+    .footer-bottom {
+        padding: 0px 80px 20px 80px;
+    }
+}
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
-        text-align: center;
     }
 
     .sponsor-logos {
-        flex-direction: column;
         gap: 20px;
     }
 }

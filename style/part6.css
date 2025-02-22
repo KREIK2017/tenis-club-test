@@ -1,66 +1,82 @@
-.part6, .part7{
+.part6,
+.part7 {
     background-color: black;
     display: flex;
-    padding: 150px;
+    padding: 70px 150px;
     flex-direction: column;
     color: white;
 }
+
 .hr7 {
-    background-color: black; 
+    background-color: black;
     margin: 0;
     color: #606060;
 }
-.part6, .up2{
-margin-bottom: 20px;
+
+.part6,
+.up2 {
+    margin-bottom: 20px;
 }
-.part6, .up2 p{
+
+.part6,
+.up2 p {
     color: #FFCC00;
 
     font-size: 24px;
-margin-bottom: 0px;
+    margin-bottom: 0px;
 
 }
-   .part6, .up2 h2{
+
+.part6,
+.up2 h2 {
     font-size: 64.6px;
     color: white;
 
 }
+
 .styled-table {
     width: 100%;
     margin: 0px;
 
 }
-.styled-table th, .styled-table td {
+
+.styled-table th,
+.styled-table td {
     width: 40%;
-    
+
     position: relative;
     font-family: "Blinker", serif;
     padding: 8px;
 }
-.styled-table th{
+
+.styled-table th {
     font-size: 37.23px;
 }
-.styled-table td{
+
+.styled-table td {
     font-size: 25px;
     line-height: 30px;
 }
+
 .styled-table th::after {
-    content: ""; 
-    position:absolute ;
+    content: "";
+    position: absolute;
     left: 8px;
     bottom: 10px;
     width: 39px;
     height: 3px;
-    background-color: #FFCC00; 
+    background-color: #FFCC00;
 }
 
 .hidden-row {
     display: none;
 }
-#day{
+
+#day {
     color: #FFCC00;
-font-size: 30.96px;
+    font-size: 30.96px;
 }
+
 #readMore {
     margin-top: 10px;
     background: none;
@@ -73,6 +89,7 @@ font-size: 30.96px;
     font-family: "Teko", serif;
 
 }
+
 #readMore:hover {
     background: #FFCC00;
     color: black;
@@ -82,10 +99,9 @@ font-size: 30.96px;
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 485px);
+    grid-template-columns: repeat(3, auto);
     gap: 15px;
-    padding: 20px;
-    padding: 50px;
+
 }
 
 .grid-card {
@@ -95,6 +111,7 @@ font-size: 30.96px;
     padding: 15px 15px 15px 0px;
     border-left: 5px solid #ffcc00;
 }
+
 .grid-icon {
     width: 71px;
     height: 71px;
@@ -119,17 +136,45 @@ font-size: 30.96px;
 }
 
 .grid-text p {
-    
+
     margin: 5px 0 0;
     font-size: 25px;
 }
 
+@media(max-width: 1720px) {
 
-@media (max-width: 900px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 485px);
+    .grid-text p {
+        margin: 5px 0 0;
+        font-size: 22px;
     }
 }
+
+@media(max-width: 1440px) {
+    .grid-text p {
+        margin: 5px 0 0;
+        font-size: 20px;
+    }
+
+    .grid-card {
+        padding: 5px 5px 5px 0px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .part6, .part7{
+        padding: 70px 80px;
+    }
+    .grid-container{
+        padding: 0px;
+    }
+    .part6,
+    .up2 h2 {
+        font-size: 50.6px;
+        color: white;
+    }
+}
+
+@media (max-width: 900px) {}
 
 @media (max-width: 600px) {
     .grid-container {
