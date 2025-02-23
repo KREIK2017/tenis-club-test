@@ -236,3 +236,58 @@
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 375px) {
+    .part6, .part7 {
+        padding: 60px 20px;
+    }
+}
+@media (max-width: 320px) {
+
+    .up2 h2 {
+        font-size: 28px;
+    }
+
+    .up2 p {
+        font-size: 12px;
+    }
+
+    .grid-container {
+        gap: 10px;
+    }
+
+    .grid-card {
+        padding: 5px;
+    }
+
+    .grid-icon {
+        width: 50px;
+        height: 50px;
+        padding: 12px;
+        margin-right: 10px;
+    }
+
+    .grid-text h3 {
+        font-size: 20px;
+    }
+
+    .grid-text p {
+        font-size: 16px;
+    }
+
+    .styled-table th {
+        font-size: 20px;
+    }
+
+    .styled-table td {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 8px;
+    }
+
+    #day {
+        font-size: 20px;
+    }
+    #readMore {
+        font-size: 16px;
+    }
+}

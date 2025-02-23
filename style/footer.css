@@ -140,12 +140,43 @@ footer {
         max-width: 200px;
     }
 
-    .footer-column h3 {
-        font-size: 33.29px;
+    .footer-column h3,
+    .footer-column h4 {
+        font-size: 23.29px;
+    }
+
+    .footer-column p,
+    .footer-column a,
+    .footer-column li {
+        font-size: 15px;
     }
 
     .footer-content,
     .footer-bottom {
         padding: 0px 40px 20px 40px;
+    }
+
+    .sponsor-logos img {
+        max-width: 175px;
+    }
+
+    .cta-button {
+        padding: 6px 50px;
+        margin-top: 15px;
+
+        font-size: 18px;
+    }
+    .footer-bottom p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .sponsor-logos img {
+        max-width: 150px;
+    }
+    .footer-content,
+    .footer-bottom {
+        padding: 20px;
     }
 }

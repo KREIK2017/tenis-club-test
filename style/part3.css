@@ -82,16 +82,18 @@
 
 
 }
+
 .volume-wrapper {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .volume-icon {
     width: 20px;
     height: 20px;
 }
+
 .volume-control {
     margin: 0px 20px;
     flex: 1;
@@ -128,9 +130,9 @@
 #radius-2::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 0; 
+    width: 0;
     height: 0;
-    box-shadow: calc(-100vmax) 0 0 100vmax #ffc107;  
+    box-shadow: calc(-100vmax) 0 0 100vmax #ffc107;
     border: none;
 }
 
@@ -184,4 +186,14 @@
 
 .controls:hover {
     background: rgba(0, 0, 0, 0.8);
+}
+
+@media(max-width: 425px) {
+    .left-controls .play-pause {
+        width: 20px;
+        height: 20px;
+    }
+    .controls{
+        padding: 5px 10px;
+    }
 }

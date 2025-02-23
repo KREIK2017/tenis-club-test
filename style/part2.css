@@ -159,9 +159,11 @@
     .left-text {
         margin-left: 0px;
     }
+
     .back-title {
         font-size: 33.6px;
     }
+
     .back-title::after {
         left: 44%;
         height: 12px;
@@ -170,8 +172,89 @@
     }
 
     .left-part::after {
-        right: -67px;
+        right: -46px;
+        transform: skewX(-8deg);
+    }
+}
 
+@media(max-width: 425px) {
+    .back-title {
+        font-size: 24px;
+    }
+
+    .left-part {
+        padding: 20px;
+    }
+
+    .left-part::after {
+        right: -29px;
+        transform: skewX(-6deg);
+        width: 13px;
+    }
+
+    .back-title::after {
+        left: 11%;
+        height: 9px;
+        bottom: 5px;
+    }
+
+    .register {
+        width: 35%;
+        font-size: 18px;
+    }
+
+    .register,
+    .talk {
+        padding: 5px 6px;
+    }
+
+    .talk {
+        font-size: 14px;
+    }
+
+    .left-part p {
+        margin: 15px 0px;
+        font-size: 14px;
+    }
+
+    .background-container {
+        height: 50vh;
+    }
+    .buttons{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .left-part p {
+        margin: 5px 0px;
+        font-size: 11px;
+    }
+    .talk {
+        font-size: 12px;
+    }
+    .background-container {
+        height: 41vh;
+    }
+}
+@media (max-width: 320px) {
+    .back-title::after {
+        left: 26%;
+        height: 9px;
+        bottom: 5px;
+    }
+    .left-part::after {
+        right: -25px;
         transform: skewX(-5deg);
+        width: 11px;
+    }
+    .register, .talk {
+        padding: 2px 3px;
+    }
+    .register {
+        font-size: 17px;
+    }
+    .talk {
+        font-size: 11px;
     }
 }

@@ -203,20 +203,23 @@
     }
 }
 
-@media(max-width: 1024px){
+@media(max-width: 1024px) {
 
-    
-    .top-info{
+
+    .top-info {
         font-size: 18px;
     }
+
     .info-box {
         padding: 0px;
         width: 200px;
     }
+
     .info-icon {
         margin-bottom: 10px;
         height: auto;
     }
+
     .info-box h3 {
         font-size: 20px;
     }
@@ -224,9 +227,9 @@
     .info-box p {
         font-size: 18px;
     }
-    
+
     .price-box {
-        padding: 0px 10px ;
+        padding: 0px 10px;
         width: 180px;
     }
 
@@ -244,9 +247,11 @@
         font-weight: 500;
         font-size: 18px;
     }
+
     .grid-text-content {
         margin-left: 80px;
     }
+
     .grid-text-content h1 {
         position: relative;
         font-size: 50.6px;
@@ -258,19 +263,22 @@
 }
 
 @media (max-width: 768px) {
-    .top-info{
+    .top-info {
         font-size: 16px;
         transform: translateX(-58%);
-        top:-70px;
+        top: -70px;
     }
+
     .info-box {
         padding: 0px;
         width: 140px;
     }
+
     .info-icon {
         margin-bottom: 10px;
         height: auto;
     }
+
     .info-box h3 {
         font-size: 16px;
     }
@@ -278,22 +286,23 @@
     .info-box p {
         font-size: 10px;
     }
-    
+
     .grid-text-content {
         margin-left: 40px;
     }
-    .grid-text-content p{
+
+    .grid-text-content p {
         max-width: 320px;
         font-size: 14px;
     }
 
     .price-box {
-        padding: 0px 10px ;
+        padding: 0px 10px;
         width: 140px;
     }
 
     .price-box p {
-        
+
         font-size: 12px;
         margin-bottom: 10px;
     }
@@ -306,12 +315,50 @@
         font-weight: 500;
         font-size: 14px;
     }
+
     .grid-text-content h1 {
         position: relative;
         font-size: 33.6px;
     }
-    .highlight::after{
+
+    .highlight::after {
         height: 16px;
         bottom: 6px;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-section {
+        flex-direction: column;
+        gap: 100px;
+
+    }
+    .image-content {
+        width: 100%;
+    }
+    .top-info {
+        transform: translateX(-27%);
+        top: -40px;
+    }
+    .info-box {
+        padding: 0px;
+        width: 120px;
+    }
+    .info-box h3 {
+        font-size: 14px;
+    }
+}
+@media (max-width: 320px) {
+    .info-box {
+        width: 90px;
+    }
+    .info-box h3 {
+        font-size: 10px;
+    }
+    .info-box p {
+        font-size: 8px;
+    }
+    .grid-text-content {
+        margin-left: 20px;
     }
 }
