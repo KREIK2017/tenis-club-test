@@ -155,18 +155,30 @@
         font-size: 20px;
     }
 
+    .up2 h2 {
+        font-size: 50.6px;
+    }
+
     .grid-card {
         padding: 5px 5px 5px 0px;
     }
 }
 
 @media(max-width: 1024px) {
-    .part6, .part7{
+
+    .part6,
+    .part7 {
         padding: 70px 80px;
     }
-    .grid-container{
+
+    .styled-table th {
+        font-size: 33.23px;
+    }
+
+    .grid-container {
         padding: 0px;
     }
+
     .part6,
     .up2 h2 {
         font-size: 50.6px;
@@ -175,6 +187,49 @@
 }
 
 @media (max-width: 900px) {}
+
+@media (max-width: 768px) {
+
+    .part6,
+    .part7 {
+        padding: 70px 40px;
+    }
+
+    .part6,
+    .up2 h2 {
+        font-size: 33.6px;
+        color: white;
+    }
+
+    .up2 p {
+        font-size: 14px;
+
+    }
+
+    .styled-table th {
+        font-size: 26.23px;
+    }
+
+    .styled-table td {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    #day {
+        font-size: 26.96px;
+
+    }
+
+    .grid-text p {
+        margin: 5px 0 0;
+        font-size: 14px;
+    }
+
+    .grid-icon {
+        width: 61px;
+        height: 61px;
+    }
+}
 
 @media (max-width: 600px) {
     .grid-container {

@@ -122,20 +122,30 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .footer-content{
-        padding: 0px 80px 20px 80px;
 
-    }
+    .footer-content,
     .footer-bottom {
         padding: 0px 80px 20px 80px;
     }
+
 }
+
 @media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-    }
 
     .sponsor-logos {
         gap: 20px;
+    }
+
+    .sponsor-logos img {
+        max-width: 200px;
+    }
+
+    .footer-column h3 {
+        font-size: 33.29px;
+    }
+
+    .footer-content,
+    .footer-bottom {
+        padding: 0px 40px 20px 40px;
     }
 }

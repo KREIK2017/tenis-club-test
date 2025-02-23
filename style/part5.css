@@ -256,3 +256,62 @@
         height: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .top-info{
+        font-size: 16px;
+        transform: translateX(-58%);
+        top:-70px;
+    }
+    .info-box {
+        padding: 0px;
+        width: 140px;
+    }
+    .info-icon {
+        margin-bottom: 10px;
+        height: auto;
+    }
+    .info-box h3 {
+        font-size: 16px;
+    }
+
+    .info-box p {
+        font-size: 10px;
+    }
+    
+    .grid-text-content {
+        margin-left: 40px;
+    }
+    .grid-text-content p{
+        max-width: 320px;
+        font-size: 14px;
+    }
+
+    .price-box {
+        padding: 0px 10px ;
+        width: 140px;
+    }
+
+    .price-box p {
+        
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .price-box strong {
+        font-size: 14px;
+    }
+
+    .price-box h3 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .grid-text-content h1 {
+        position: relative;
+        font-size: 33.6px;
+    }
+    .highlight::after{
+        height: 16px;
+        bottom: 6px;
+    }
+}

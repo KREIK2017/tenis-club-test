@@ -32,7 +32,7 @@
     z-index: 2;
     position: absolute;
     top: 0;
-    right: -96px;
+    right: -108px;
     width: 15px;
     height: 100%;
     background-color: #FBC702;
@@ -106,22 +106,72 @@
 
 @media(max-width: 1440px) {
     .back-title {
-        font-size: 50.6px;
+        font-size: 40.6px;
     }
 
     .back-title::after {
-        left: 51%;
+        left: 44%;
         height: 15px;
+    }
+
+    .left-part::after {
+        right: -90px;
+
+        transform: skewX(-11deg);
     }
 }
 
 @media(max-width: 1024px) {
-    
+    .background-container {
+        height: 75vh;
+    }
+
     .left-text {
         margin-left: 40px;
     }
+
     .back-title::after {
         left: 15%;
         height: 15px;
+    }
+
+    .left-part::after {
+        right: -67px;
+
+        transform: skewX(-10deg);
+    }
+}
+
+
+@media(max-width: 768px) {
+    .background-container {
+        height: 65vh;
+    }
+
+    .left-part {
+        width: 57%;
+    }
+
+    .right-part {
+        width: 50%;
+    }
+
+    .left-text {
+        margin-left: 0px;
+    }
+    .back-title {
+        font-size: 33.6px;
+    }
+    .back-title::after {
+        left: 44%;
+        height: 12px;
+        bottom: 10px;
+
+    }
+
+    .left-part::after {
+        right: -67px;
+
+        transform: skewX(-5deg);
     }
 }

@@ -87,3 +87,22 @@
     margin-bottom: 25px;
   }
 }
+@media (max-width: 768px) {
+  .part8 {
+      padding: 70px 40px;
+  }
+
+  .item-content h3 {
+    margin: 0;
+    font-size: 24.39px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .item-content p {
+    margin: 5px 0 0;
+    font-size: 14.38px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+}
